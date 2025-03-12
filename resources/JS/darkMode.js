@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',function() {
   //chenge mode fn
   function toggleDarkMode(){
     body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')
+    if (body.classList.contains('dark-mode'))
         {
       localStorage.setItem('darkMode','enabled');
       }else{
