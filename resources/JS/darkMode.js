@@ -1,20 +1,23 @@
-document.addEventListener('DOMContentLoaded',function() {
-  const darkModeToggle = document.getElementById('darkModeToggle');
+document.addEventListener('DOMContentLoaded', function() {
+  const modeSwitch = document.getElementById('modeSwitch');
   const body = document.body;
-  //chenge mode fn
-  function toggleDarkMode(){
+
+  // Change mode function
+  function toggleDarkMode() {
     body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode'))
-        {
-      localStorage.setItem('darkMode','enabled');
-      }else{
-       localStorage.setItem('darkMode', 'disabled');
-      }
-  }
-  // load data from localStrage
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      localStorage.setItem('darkMode', 'disabled');
     }
-  // add listener for switch
-    darkModeToggle.addEventListener('click', toggleDarkMode);
+  }
+
+  // Load data from localStorage
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    modeSwitch.checked = true;
+  }
+
+  // Add listener for switch
+  modeSwitch.addEventListener('change', toggleDarkMode);
 });
