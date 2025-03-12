@@ -2,3 +2,10 @@
   padding: 0;
   margin: 0;
  }
+
+.upper {
+  text-transform: uppercase;
+}
+h1{
+  color: blue;
+}
