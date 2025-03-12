@@ -65,7 +65,7 @@ header .slider:before {
 }
 
 header input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #000;
 }
 
 header input:checked + .slider:before {
@@ -73,7 +73,7 @@ header input:checked + .slider:before {
 }
 
 #darkModeToggle {
-  background-color: #2196F3;
+  background-color: #000;
   color: white;
   border: none;
   padding: 10px 20px;
