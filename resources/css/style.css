@@ -10,7 +10,7 @@ body {
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color:#333333;
     color:#454540;
 }
 .upper {
